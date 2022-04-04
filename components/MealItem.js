@@ -5,8 +5,8 @@ function MealItem({ title, imageUrl }) {
     <View>
       <Pressable>
         <View>
-          <Image source={{ uri: imageUrl }} />
-          <Text>{title}</Text>
+          <Image style={styles.image} source={{ uri: imageUrl }} />
+          <Text style={styles.title}>{title}</Text>
         </View>
       </Pressable>
     </View>
@@ -15,4 +15,14 @@ function MealItem({ title, imageUrl }) {
 
 export default MealItem;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  image: {
+    width: "100%",
+    height: 200,
+  },
+  title: {
+    fontWeight: "bold",
+    textAlign: "center",
+    fontSize: 18,
+  },
+});
