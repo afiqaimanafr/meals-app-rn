@@ -17,7 +17,11 @@ export default function App() {
           <Stack.Screen
             name="MealsCategories"
             component={CategoriesScreen}
-            options={{}}
+            options={{
+              title: "All Categories",
+              headerStyle: { backgroundColor: "#351401" },
+              headerTintColor: "white",
+            }}
           />
           <Stack.Screen
             name="MealsOverview"
