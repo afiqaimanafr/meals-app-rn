@@ -1,11 +1,11 @@
 import { View, Text, StyleSheet, Pressable, Image } from "react-native";
 
-function MealItem({ title }) {
+function MealItem({ title, imageUrl }) {
   return (
     <View>
       <Pressable>
         <View>
-          <Image />
+          <Image source={{ uri: imageUrl }} />
           <Text>{title}</Text>
         </View>
       </Pressable>
