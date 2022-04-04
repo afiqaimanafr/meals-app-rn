@@ -1,9 +1,14 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, Pressable, Image } from "react-native";
 
 function MealItem({ title }) {
   return (
     <View>
-      <Text>{title}</Text>
+      <Pressable>
+        <View>
+          <Image />
+          <Text>{title}</Text>
+        </View>
+      </Pressable>
     </View>
   );
 }
