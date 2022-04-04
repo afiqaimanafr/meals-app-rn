@@ -11,11 +11,12 @@ function MealDetailScreen({ route }) {
   return (
     <View>
       <Image style={styles.image} source={{ uri: selectedMeal.imageUrl }} />
-      <Text>{selectedMeal.title}</Text>
+      <Text style={styles.title}>{selectedMeal.title}</Text>
       <MealDetails
         duration={selectedMeal.duration}
         complexity={selectedMeal.complexity}
         affordability={selectedMeal.affordability}
+        textStyle={styles.detailText}
       />
       <Text>Ingredients</Text>
       {selectedMeal.ingredients.map((ingredient) => (
@@ -34,6 +35,14 @@ export default MealDetailScreen;
 const styles = StyleSheet.create({
   image: {
     width: "100%",
-    height: 200,
+    height: 250,
   },
+  title: {
+    fontWeight: "bold",
+    fontSize: 24,
+    margin: 8,
+    textAlign: "center",
+    color: "white",
+  },
+  detailText: { color: "white" },
 });
