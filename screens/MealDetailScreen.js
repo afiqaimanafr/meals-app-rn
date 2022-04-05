@@ -21,7 +21,7 @@ function MealDetailScreen({ route, navigation }) {
       headerRight: () => {
         return (
           <IconButton
-            icon="star"
+            icon="arrow"
             color="white"
             onPress={headerButtonPressHandler}
           />
