@@ -12,3 +12,5 @@ const favoritesSlice = createSlice({
     },
   },
 });
+
+export default favoritesSlice.reducer;
