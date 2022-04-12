@@ -8,7 +8,8 @@ import List from "../components/MealDetail/List";
 import IconButton from "../components/IconButton";
 
 function MealDetailScreen({ route, navigation }) {
-  useContext();
+  const favoriteMealsCtx = useContext();
+
   const mealId = route.params.mealId;
 
   const selectedMeal = MEALS.find((meal) => meal.id === mealId);
